@@ -86,6 +86,10 @@ a{
   color:#d9ae4b;
 }
 
+
+.call-btn{border:1px solid #d9ae4b;padding:10px 16px;border-radius:25px;color:white;}
+.call-btn:hover{background:#d9ae4b;color:#17251e;}
+
 .nav-book{
   border:1px solid #d9ae4b;
   padding:10px 18px;
@@ -526,6 +530,15 @@ footer small{
   margin-top:8px;
 }
 
+
+/* REVIEWS */
+.reviews{background:#f7f6ef}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.review-card{background:white;padding:28px;border-radius:20px;border:1px solid #e1e3dc;box-shadow:0 8px 25px rgba(0,0,0,.06)}.stars{color:#d9ae4b;font-size:20px;letter-spacing:3px;margin-bottom:15px}.review-card p{color:#5f6963;margin-bottom:18px}.review-card strong{color:#10251e}
+.pickup{background:#eaf0ea}.pickup-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.pickup-card{background:white;border:1px solid #dfe4dc;border-radius:18px;padding:25px;box-shadow:0 8px 25px rgba(0,0,0,.05)}.pickup-card h3{margin-bottom:8px}.pickup-card p{color:#68736c;font-size:15px}
+.faq{background:#f7f6ef}.faq-list{max-width:900px;margin:auto}.faq-item{background:white;border:1px solid #e1e3dc;border-radius:14px;margin-bottom:12px;overflow:hidden}.faq-item summary{cursor:pointer;padding:19px 22px;font-weight:bold;list-style:none}.faq-item summary::-webkit-details-marker{display:none}.faq-item p{padding:0 22px 20px;color:#68736c}
+.contact{background:#eaf0ea}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.contact-card{background:white;border-radius:18px;padding:26px;text-align:center;border:1px solid #dfe4dc}.contact-card .contact-icon{font-size:28px;margin-bottom:10px}.contact-card h3{margin-bottom:8px}.contact-card p{color:#68736c}.contact-card a{color:#14513e;font-weight:bold}
+@media(max-width:900px){.review-grid{grid-template-columns:1fr}.pickup-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.pickup-grid{grid-template-columns:1fr}.call-btn{display:none}}
+
 /* MOBILE */
 
 @media(max-width:900px){
@@ -655,7 +668,12 @@ footer small{
       <a href="#destinations">Destinations</a>
       <a href="#packages">Packages</a>
       <a href="#rates">Rates</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#pickup">Pickup</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
       <a href="#car">Our Ertiga</a>
+      <a href="tel:+919682639270" class="call-btn">📞 Call Now</a>
       <a href="#booking" class="nav-book">Book Now</a>
     </nav>
 
@@ -1049,9 +1067,7 @@ footer small{
             <li>Day 3: Pahalgam</li>
             <li>Day 4: Sonamarg</li>
             <li>Day 5: Srinagar Local</li>
-            <li>Day 6: Doodhpathri</li>
-            <li>Day 7: Srinagar / Drop</li>
-          </ul>
+            </ul>
 
           <a href="#booking" class="package-button">
             Book This Tour
@@ -1131,17 +1147,16 @@ footer small{
         <p class="rate-note">
           Private Ertiga with driver for Jammu, Katra and Kashmir travel.
         </p>
-
-      </div>
-
-
-    </div>
+ </div>
+  </div>
 
   </div>
 
 </section>
+<!-- PICKUP LOCATIONS -->
+<section class="section pickup" id="pickup"><div class="container"><div class="section-heading"><div><p class="eyebrow">Easy Pickup</p><h2>Pickup & travel locations</h2></div><p>Pickup and drop arrangements can be discussed according to your travel plan and package.</p></div><div class="pickup-grid"><div class="pickup-card"><h3>📍 Srinagar</h3><p>Pickup and drop available for Kashmir tours.</p></div><div class="pickup-card"><h3>✈️ Srinagar Airport</h3><p>Airport pickup and drop can be arranged.</p></div><div class="pickup-card"><h3>📍 Jammu</h3><p>Jammu pickup and return travel available.</p></div><div class="pickup-card"><h3>📍 Katra</h3><p>Katra pickup can be arranged for your journey.</p></div></div></div></section>
 
-
+  
 <!-- ERTIGA -->
 
 <section class="section car-section" id="car">
@@ -1177,9 +1192,6 @@ alt="Front view of white Ertiga">
 alt="Side view of white Ertiga">
 
 </figure>
-
-74
-
 <figure>
 
 <img src="ertiga_back.png"
@@ -1258,6 +1270,8 @@ Ertiga">
 
   </div>
 </section>
+<!-- FAQ -->
+<section class="section faq" id="faq"><div class="container"><div class="section-heading"><div><p class="eyebrow">Need To Know</p><h2>Frequently asked questions</h2></div><p>Quick answers for planning your Kashmir Ertiga trip.</p></div><div class="faq-list"><details class="faq-item"><summary>Is the Ertiga provided with a driver?</summary><p>Yes. The listed rates are for private Ertiga travel with a driver.</p></details><details class="faq-item"><summary>Are AC and Without AC options available?</summary><p>Yes. Both options are available at the daily rates shown on this website.</p></details><details class="faq-item"><summary>Can I choose my own Kashmir destinations?</summary><p>Yes. You can discuss your preferred destinations and travel dates through WhatsApp.</p></details><details class="faq-item"><summary>How do I book the Ertiga?</summary><p>Fill in the booking enquiry form and send the enquiry on WhatsApp, or call directly.</p></details></div></div></section>
 <!-- BOOKING -->
 <section class="section booking" id="booking">
   <div class="container booking-wrapper">
@@ -1341,48 +1355,16 @@ WhatsApp: +91 9682639270
 </div>
 
 </footer>
-
 <!-- WHATSAPP SCRIPT -->
-
 <script>
-
 function sendEnquiry(){
-
-const phone = "919682639270";
-
-const name =
-
-document.getElementById("name").value.trim
-
-()
-|| "Customer";
-
-const details =
-
-document.getElementById("details").value.t rim()
-
-|| "I want to plan a Kashmir trip.";
-
-const message =
-
-11 "Hello, I am + name + "+
-
-details;
-
+  const phone="919682639270";
+  const name=document.getElementById("name").value.trim()||"Customer";
+  const details=document.getElementById("details").value.trim()||"I want to plan a Kashmir trip.";
+  const message="Hello, I am "+name+". "+details;
+  const url="https://wa.me/"+phone+"?text="+encodeURIComponent(message);
+  window.open(url,"_blank");
 }
-
-const url =
-
-"https://wa.me/" +
-
-phone +
-
-"?text=" +
-
-encodeURIComponent(message);
-
-window.open(url, "_blank");
-
 </script>
 
 </body>
