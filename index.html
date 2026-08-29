@@ -1751,29 +1751,55 @@ WhatsApp: +91 9682639270
 </div>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 <script>
-function submitReview(){
-  const name = document.getElementById("reviewName").value.trim() || "Guest";
-  const rating = document.getElementById("reviewRating").value;
-  const review = document.getElementById("reviewText").value.trim();
+const SUPABASE_URL = "https://bdgayfmfdfjkzxwkybiq.supabase.co";
+const SUPABASE_KEY = "sb_publishable_lp9X8dJJC2WoutQ9mEt7-w_ofibkFHZ";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+</script>
+<script>
+async function submitReview(){
+
+  const name =
+    document.getElementById("reviewName").value.trim() || "Guest";
+
+  const rating =
+    Number(document.getElementById("reviewRating").value);
+
+  const review =
+    document.getElementById("reviewText").value.trim();
 
   if(!review){
     alert("Please write your review first.");
     return;
   }
 
-  const stars = "★★★★★".slice(0, Number(rating)) + "☆☆☆☆☆".slice(0, 5-Number(rating));
-  const message =
-    "New Website Review%0A%0A" +
-    "Name: " + encodeURIComponent(name) + "%0A" +
-    "Rating: " + encodeURIComponent(stars) + "%0A" +
-    "Review: " + encodeURIComponent(review);
+  const { error } = await supabaseClient
+    .from("Reviews")
+    .insert([
+      {
+        name: name,
+        rating: rating,
+        review: review
+      }
+    ]);
 
-  window.open("https://wa.me/919682639270?text=" + message, "_blank");
+  if(error){
+    alert("Review save nahi hua. Please try again.");
+    console.error(error);
+    return;
+  }
+
+  alert("Thank you! Your review has been submitted.");
+
+  document.getElementById("reviewText").value = "";
 }
 </script>
-
 <!-- WHATSAPP SCRIPT -->
 <script>
 function sendEnquiry(){
