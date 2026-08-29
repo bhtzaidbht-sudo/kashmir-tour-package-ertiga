@@ -6,17 +6,6 @@
 
   <meta name="description" content="Kashmir tour package with private Ertiga taxi and driver. Explore Srinagar, Gulmarg, Pahalgam, Sonamarg and other Kashmir destinations. Book your Kashmir tour and Ertiga taxi.">
 <title>Kashmir Tour Package | Ertiga Taxi & Kashmir Tours</title>
-#packages .lux-heading h2{
-  color:#ffffff !important;
-  opacity:1 !important;
-  visibility:visible !important;
-}
-
-#packages .lux-heading p{
-  color:#ffffff !important;
-  opacity:1 !important;
-  visibility:visible !important;
-}
   <style>
   .lux-heading h2{
   color:#10251e !important;
@@ -24,10 +13,16 @@
 
 .lux-heading p{
   color:#10251e !important;
-  .luxury-packages .lux-heading h2,
-.luxury-packages .lux-heading p{
+  #packages > .container > .lux-heading:first-child h2{
   color:#ffffff !important;
+  opacity:1 !important;
+  visibility:visible !important;
 }
+
+#packages > .container > .lux-heading:first-child p{
+  color:#ffffff !important;
+  opacity:1 !important;
+  visibility:visible !important;
 }
 *{
   margin:0;
