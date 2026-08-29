@@ -684,7 +684,16 @@ html, body{
   .review-form-grid{grid-template-columns:1fr}
   .review-full{grid-column:span 1}
 }
-
+.menu-toggle{
+  display:none;
+  background:none;
+  border:1px solid #d9ae4b;
+  color:white;
+  font-size:24px;
+  padding:6px 12px;
+  border-radius:10px;
+  cursor:pointer;
+}
 /* MOBILE */
 
 @media(max-width:900px){
@@ -726,8 +735,35 @@ html, body{
     width:90%;
   }
 
-  .nav-links a:not(.nav-book){
-    display:none;
+ .menu-toggle{
+  display:block;
+}
+
+.nav-inner{
+  position:relative;
+}
+
+.nav-links{
+  display:none;
+  position:absolute;
+  top:65px;
+  left:0;
+  right:0;
+  background:#062b21;
+  flex-direction:column;
+  padding:15px;
+  gap:12px;
+  z-index:9999;
+}
+
+.nav-links.active{
+  display:flex;
+}
+
+.nav-links a{
+  display:block;
+  padding:8px 0;
+}
   }
 
   .logo{
@@ -808,7 +844,7 @@ html, body{
     <a href="#home" class="logo">
       Kashmir Tour Package <span>Ertiga</span>
     </a>
-
+<button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#destinations">Destinations</a>
@@ -1852,7 +1888,9 @@ function sendEnquiry(){
   window.open(url,"_blank");
 }
 </script>
-
+function toggleMenu(){
+  document.querySelector(".nav-links").classList.toggle("active");
+}
 </body>
 
 </html>
