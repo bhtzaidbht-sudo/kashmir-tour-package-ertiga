@@ -94,7 +94,8 @@ a{
   border-radius:25px;
   color:white;
 }
-  /* HERO */
+
+/* HERO */
 
 .hero{
   min-height:650px;
@@ -224,7 +225,8 @@ a{
   color:#68736b;
   font-size:15px;
 }
-  /* DESTINATIONS */
+
+/* DESTINATIONS */
 
 .destinations{
   background:#eaf0ea;
@@ -418,7 +420,8 @@ a{
 .car-gallery .large img{
   height:475px;
 }
-  /* BOOKING */
+
+/* BOOKING */
 
 .booking{
   background:#062b21;
@@ -442,7 +445,7 @@ a{
   color:#d5dfd9;
   max-width:600px;
   font-size:17px;
-}
+  }
 
 .booking-card{
   background:white;
@@ -575,8 +578,114 @@ footer small{
   .lux-price-row{grid-template-columns:1fr}
   .lux-card-inner{padding:22px}
   .lux-location-heading h3{font-size:23px}
+}
+
+
+/* MOBILE PACKAGE FIX */
+html, body{
+  overflow-x:hidden;
+}
+.lux-package-grid{
+  min-width:0;
+}
+.lux-package-card{
+  min-width:0;
+  width:100%;
+}
+@media(max-width:900px){
+  .lux-package-grid{
+    grid-template-columns:1fr !important;
+    width:100%;
   }
-  /* MOBILE */
+  .lux-package-card{
+    width:100%;
+    max-width:100%;
+  }
+}
+
+
+/* REVIEW FORM */
+.review-form-card{
+  max-width:900px;
+  margin:38px auto 0;
+  padding:30px;
+  background:#fff;
+  border:1px solid #ded9c9;
+  border-radius:24px;
+  box-shadow:0 18px 45px rgba(16,37,30,.08);
+}
+.review-form-card h3{
+  margin:0 0 8px;
+  color:#10251e;
+  font-size:28px;
+}
+.review-form-text{
+  margin:0 0 22px;
+  color:#68736c;
+}
+.review-form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.review-full{
+  grid-column:span 2;
+}
+.review-form-card select,
+.review-form-card input,
+.review-form-card textarea{
+  width:100%;
+  padding:14px;
+  border:1px solid #d8ddd8;
+  border-radius:10px;
+  font-family:inherit;
+  font-size:15px;
+  outline:none;
+  background:#fff;
+}
+.review-form-card textarea{
+  min-height:120px;
+  resize:vertical;
+}
+.review-submit-btn{
+  margin-top:20px;
+  border:0;
+  background:#d9ae4b;
+  color:#17251e;
+  font-family:inherit;
+  font-size:15px;
+  font-weight:800;
+  padding:14px 24px;
+  border-radius:30px;
+  cursor:pointer;
+}
+.review-note{
+  margin:12px 0 0;
+  color:#68736c;
+  font-size:12px;
+  line-height:1.6;
+}
+.guest-review-grid{
+  margin-top:30px;
+}
+.guest-review-card{
+  background:#fff;
+  border:1px solid #ded9c9;
+  border-radius:18px;
+  padding:22px;
+}
+.guest-review-card .stars{
+  color:#b58b2e;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+@media(max-width:600px){
+  .review-form-card{padding:22px}
+  .review-form-grid{grid-template-columns:1fr}
+  .review-full{grid-column:span 1}
+}
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -784,7 +893,7 @@ footer small{
         <h3>Premium Comfort</h3>
         <p>
           Spacious Ertiga for couples, families and small groups.
-        </p>
+                  </p>
       </article>
 
       <article class="feature">
@@ -815,8 +924,9 @@ footer small{
 
   </div>
 </section>
-  
-  <!-- DESTINATIONS -->
+
+
+<!-- DESTINATIONS -->
 
 <section class="section destinations" id="destinations">
 
@@ -979,6 +1089,8 @@ footer small{
   </div>
 
 </section>
+
+
 <!-- TOUR PACKAGES -->
 <section class="section luxury-packages" id="packages">
   <div class="container">
@@ -1026,6 +1138,7 @@ footer small{
             <li>Hotel Accommodation</li>
             <li>Breakfast + Dinner</li>
             <li>Dal Lake Shikara Ride Included</li>
+            <li>Toll Taxes Included</li>
             <li>Kashmir Sightseeing</li>
           </ul>
 
@@ -1064,6 +1177,7 @@ footer small{
             <li>Hotel Accommodation</li>
             <li>Breakfast + Dinner</li>
             <li>Dal Lake Shikara Ride Included</li>
+            <li>Toll Taxes Included</li>
             <li>Kashmir Sightseeing</li>
           </ul>
 
@@ -1102,6 +1216,7 @@ footer small{
             <li>Hotel Accommodation</li>
             <li>Breakfast + Dinner</li>
             <li>Dal Lake Shikara Ride Included</li>
+            <li>Toll Taxes Included</li>
             <li>Kashmir Sightseeing</li>
           </ul>
 
@@ -1140,6 +1255,7 @@ footer small{
             <li>Hotel Accommodation</li>
             <li>Breakfast + Dinner</li>
             <li>Dal Lake Shikara Ride Included</li>
+            <li>Toll Taxes Included</li>
             <li>Kashmir Sightseeing</li>
           </ul>
 
@@ -1191,6 +1307,7 @@ footer small{
             <li>Hotel Accommodation</li>
             <li>Breakfast + Dinner</li>
             <li>Dal Lake Shikara Ride Included</li>
+            <li>Toll Taxes Included</li>
             <li>Kashmir Sightseeing</li>
           </ul>
 
@@ -1224,11 +1341,12 @@ footer small{
           <div class="lux-route">📍 Jammu → Jammu</div>
           <div class="lux-divider"></div>
 
-          <ul class="lux-includes">
+                    <ul class="lux-includes">
             <li>Private Ertiga with Driver</li>
             <li>Hotel Accommodation</li>
             <li>Breakfast + Dinner</li>
             <li>Dal Lake Shikara Ride Included</li>
+            <li>Toll Taxes Included</li>
             <li>Kashmir Sightseeing</li>
           </ul>
 
@@ -1267,6 +1385,7 @@ footer small{
             <li>Hotel Accommodation</li>
             <li>Breakfast + Dinner</li>
             <li>Dal Lake Shikara Ride Included</li>
+            <li>Toll Taxes Included</li>
             <li>Kashmir Sightseeing</li>
           </ul>
 
@@ -1305,6 +1424,7 @@ footer small{
             <li>Hotel Accommodation</li>
             <li>Breakfast + Dinner</li>
             <li>Dal Lake Shikara Ride Included</li>
+            <li>Toll Taxes Included</li>
             <li>Kashmir Sightseeing</li>
           </ul>
 
@@ -1321,14 +1441,15 @@ footer small{
 
     <div class="lux-important">
       <div class="lux-important-title">Package Information</div>
-      <p><strong>Included:</strong> Private Ertiga with Driver • Hotel Accommodation • Breakfast + Dinner • Dal Lake Shikara Ride • Kashmir Sightseeing.</p>
-      <p><strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab • Toll Taxes • Entry Tickets • Personal Expenses.</p>
+      <p><strong>Included:</strong> Private Ertiga with Driver • Hotel Accommodation • Breakfast + Dinner • Dal Lake Shikara Ride • Toll Taxes • Kashmir Sightseeing.</p>
+      <p><strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab • Entry Tickets • Personal Expenses.</p>
       <p><strong>Room Choice:</strong> Standard Room or Family Room can be requested according to availability.</p>
     </div>
 
   </div>
-                                 </section>
-    <!-- RATES -->
+</section>
+
+<!-- RATES -->
 
 <section class="section rates" id="rates">
 
@@ -1465,7 +1586,8 @@ Ertiga">
 </div>
 
 </section>
-  <!-- REVIEWS -->
+
+<!-- REVIEWS -->
 <section class="section reviews" id="reviews">
   <div class="container">
 
@@ -1474,47 +1596,72 @@ Ertiga">
         <p class="eyebrow">Happy Travelers</p>
         <h2>What Our Guests Say</h2>
       </div>
-
-      <p>
-        Comfortable rides, friendly service and memorable Kashmir journeys.
-      </p>
+      <p>Comfortable rides, friendly service and memorable Kashmir journeys.</p>
     </div>
 
     <div class="review-grid">
-
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p>
-          “Very comfortable Ertiga and a helpful driver. The Kashmir trip was
-          smooth and enjoyable.”
-        </p>
+        <p>“Very comfortable Ertiga and a helpful driver. The Kashmir trip was smooth and enjoyable.”</p>
         <strong>— Kashmir Traveler</strong>
       </div>
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p>
-          “The sightseeing route was well planned and the car was clean and
-          comfortable throughout the journey.”
-        </p>
+        <p>“The sightseeing route was well planned and the car was clean and comfortable throughout the journey.”</p>
         <strong>— Family Traveler</strong>
       </div>
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <p>
-          “Good service for a family trip. We enjoyed the beautiful places
-          around Kashmir.”
-        </p>
+        <p>“Good service for a family trip. We enjoyed the beautiful places around Kashmir.”</p>
         <strong>— Happy Guest</strong>
       </div>
-
     </div>
+
+    <div class="review-form-card">
+      <div>
+        <p class="eyebrow">Share Your Experience</p>
+        <h3>Write a Review</h3>
+        <p class="review-form-text">Tell future guests about your Kashmir journey with us.</p>
+      </div>
+
+      <div class="review-form-grid">
+        <div class="form-group">
+          <label for="reviewName">Your Name</label>
+          <input type="text" id="reviewName" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="reviewRating">Rating</label>
+          <select id="reviewRating">
+            <option value="5">★★★★★ — 5 Stars</option>
+            <option value="4">★★★★☆ — 4 Stars</option>
+            <option value="3">★★★☆☆ — 3 Stars</option>
+            <option value="2">★★☆☆☆ — 2 Stars</option>
+            <option value="1">★☆☆☆☆ — 1 Star</option>
+          </select>
+        </div>
+
+        <div class="form-group review-full">
+          <label for="reviewText">Your Review</label>
+          <textarea id="reviewText" placeholder="Write about your Kashmir trip..."></textarea>
+        </div>
+      </div>
+
+      <button class="review-submit-btn" type="button" onclick="submitReview()">
+        Submit Review
+      </button>
+
+      <p class="review-note">
+        Your review will be prepared as a WhatsApp message for approval before it is published.
+      </p>
+    </div>
+
+    <div id="guestReviews" class="review-grid guest-review-grid"></div>
 
   </div>
 </section>
-<!-- FAQ -->
-<section class="section faq" id="faq"><div class="container"><div class="section-heading"><div><p class="eyebrow">Need To Know</p><h2>Frequently asked questions</h2></div><p>Quick answers for planning your Kashmir Ertiga trip.</p></div><div class="faq-list"><details class="faq-item"><summary>Is the Ertiga provided with a driver?</summary><p>Yes. The listed rates are for private Ertiga travel with a driver.</p></details><details class="faq-item"><summary>Are AC and Without AC options available?</summary><p>Yes. Both options are available at the daily rates shown on this website.</p></details><details class="faq-item"><summary>Can I choose my own Kashmir destinations?</summary><p>Yes. You can discuss your preferred destinations and travel dates through WhatsApp.</p></details><details class="faq-item"><summary>How do I book the Ertiga?</summary><p>Fill in the booking enquiry form and send the enquiry on WhatsApp, or call directly.</p></details></div></div></section>
 <!-- BOOKING -->
 <section class="section booking" id="booking">
   <div class="container booking-wrapper">
@@ -1604,6 +1751,29 @@ WhatsApp: +91 9682639270
 </div>
 
 </footer>
+
+<script>
+function submitReview(){
+  const name = document.getElementById("reviewName").value.trim() || "Guest";
+  const rating = document.getElementById("reviewRating").value;
+  const review = document.getElementById("reviewText").value.trim();
+
+  if(!review){
+    alert("Please write your review first.");
+    return;
+  }
+
+  const stars = "★★★★★".slice(0, Number(rating)) + "☆☆☆☆☆".slice(0, 5-Number(rating));
+  const message =
+    "New Website Review%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Rating: " + encodeURIComponent(stars) + "%0A" +
+    "Review: " + encodeURIComponent(review);
+
+  window.open("https://wa.me/919682639270?text=" + message, "_blank");
+}
+</script>
+
 <!-- WHATSAPP SCRIPT -->
 <script>
 function sendEnquiry(){
