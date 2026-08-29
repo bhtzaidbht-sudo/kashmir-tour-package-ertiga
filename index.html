@@ -94,8 +94,7 @@ a{
   border-radius:25px;
   color:white;
 }
-
-/* HERO */
+  /* HERO */
 
 .hero{
   min-height:650px;
@@ -225,8 +224,7 @@ a{
   color:#68736b;
   font-size:15px;
 }
-
-/* DESTINATIONS */
+  /* DESTINATIONS */
 
 .destinations{
   background:#eaf0ea;
@@ -420,8 +418,7 @@ a{
 .car-gallery .large img{
   height:475px;
 }
-
-/* BOOKING */
+  /* BOOKING */
 
 .booking{
   background:#062b21;
@@ -537,7 +534,49 @@ footer small{
 @media(max-width:900px){.review-grid{grid-template-columns:1fr}.pickup-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.pickup-grid{grid-template-columns:1fr}.call-btn{display:none}}
 
-/* MOBILE */
+
+/* LUXURY COUPLE PACKAGE */
+.luxury-packages{
+  background:linear-gradient(180deg,#0e211b 0%,#142b23 43%,#f6f3ea 43%,#f6f3ea 100%);
+  padding-top:85px;
+  padding-bottom:90px;
+}
+.lux-heading{max-width:760px;margin:0 auto 55px;text-align:center;color:#fff}
+.lux-heading .lux-eyebrow,.lux-location-heading .lux-eyebrow{color:#d9ae4b;font-size:11px;font-weight:800;letter-spacing:2.2px;text-transform:uppercase;margin-bottom:7px}
+.lux-heading h2{color:#fff;font-size:clamp(38px,5vw,54px);margin:0 0 12px;line-height:1.05}
+.lux-heading>p:last-child{color:#d8dfda;line-height:1.7}
+.lux-location-heading{display:flex;align-items:center;gap:18px;margin:0 0 25px}
+.lux-location-heading>span{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1px solid #d9ae4b;border-radius:50%;color:#d9ae4b;font-weight:800}
+.lux-location-heading h3{margin:0 0 3px;color:#10251e;font-size:28px}
+.lux-location-heading p:last-child{margin:0;color:#68736c;font-size:14px}
+.lux-package-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:65px}
+.lux-package-card{background:#fff;border:1px solid #ded9c9;border-radius:24px;overflow:hidden;box-shadow:0 18px 45px rgba(16,37,30,.10)}
+.lux-card-inner{padding:30px}
+.lux-badge{display:inline-block;padding:7px 12px;border-radius:20px;background:#f2ead5;color:#80631e;font-size:10px;font-weight:800;letter-spacing:1px}
+.lux-card-inner h3{margin:18px 0 20px;font-size:27px;color:#10251e}
+.lux-price-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lux-price-box{background:#f7f6f0;border:1px solid #e7e3d7;border-radius:16px;padding:16px}
+.lux-price-box span{display:block;color:#68736c;font-size:10px;font-weight:800;letter-spacing:1px;margin-bottom:6px}
+.lux-price-box strong{display:block;color:#14513e;font-size:25px}
+.lux-price-box small{color:#7b847e;font-size:11px}
+.lux-route{margin-top:18px;color:#5f6963;font-size:14px;font-weight:700}
+.lux-divider{height:1px;background:#e8e5dc;margin:20px 0}
+.lux-includes{padding-left:20px;margin:0;color:#4e5c54;line-height:1.9;font-size:14px}
+.lux-not-included{margin-top:18px;padding:14px 15px;border-radius:12px;background:#faf8f1;color:#68736c;font-size:12px;line-height:1.6}
+.lux-not-included strong,.lux-important strong{color:#10251e}
+.lux-book-btn{display:block;margin-top:22px;padding:14px 18px;text-align:center;border-radius:30px;background:#10251e;color:#fff;text-decoration:none;font-weight:800}
+.lux-book-btn:hover{background:#d9ae4b;color:#10251e}
+.lux-important{max-width:950px;margin:0 auto;padding:28px 30px;border-radius:20px;background:#fff;border:1px solid #ded9c9;box-shadow:0 12px 30px rgba(16,37,30,.07)}
+.lux-important-title{color:#10251e;font-size:20px;font-weight:800;margin-bottom:12px}
+.lux-important p{color:#68736c;font-size:14px;line-height:1.7;margin:8px 0}
+@media(max-width:900px){.lux-package-grid{grid-template-columns:1fr}}
+@media(max-width:600px){
+  .luxury-packages{background:linear-gradient(180deg,#0e211b 0%,#142b23 28%,#f6f3ea 28%,#f6f3ea 100%)}
+  .lux-price-row{grid-template-columns:1fr}
+  .lux-card-inner{padding:22px}
+  .lux-location-heading h3{font-size:23px}
+  }
+  /* MOBILE */
 
 @media(max-width:900px){
 
@@ -776,9 +815,8 @@ footer small{
 
   </div>
 </section>
-
-
-<!-- DESTINATIONS -->
+  
+  <!-- DESTINATIONS -->
 
 <section class="section destinations" id="destinations">
 
@@ -941,149 +979,356 @@ footer small{
   </div>
 
 </section>
-
-
 <!-- TOUR PACKAGES -->
-
-<section class="section packages" id="packages">
-
+<section class="section luxury-packages" id="packages">
   <div class="container">
 
-    <div class="section-heading">
+    <div class="lux-heading">
+      <p class="lux-eyebrow">PRIVATE KASHMIR ESCAPE</p>
+      <h2>Couple Package — 2 Persons</h2>
+      <p>Premium private travel for two with comfortable accommodation, meals and a complimentary Dal Lake Shikara Ride.</p>
+    </div>
 
+    <div class="lux-location-heading">
+      <span>01</span>
       <div>
-        <p class="eyebrow">Plan Your Kashmir Trip</p>
-        <h2>Popular tour packages</h2>
+        <p class="lux-eyebrow">START & RETURN</p>
+        <h3>Srinagar → Srinagar</h3>
+        <p>All prices are per person for 2 persons travelling together.</p>
       </div>
+    </div>
 
-      <p>
-        Choose a ready itinerary or contact us to build a route
-        according to your travel dates.
-      </p>
+    <div class="lux-package-grid">
+      
+      <article class="lux-package-card">
+        <div class="lux-card-inner">
+          <span class="lux-badge">COUPLE PACKAGE • 2 PERSONS</span>
+          <h3>3 Days / 2 Nights</h3>
+
+          <div class="lux-price-row">
+            <div class="lux-price-box">
+              <span>AC</span>
+              <strong>₹8,249</strong>
+              <small>per person</small>
+            </div>
+            <div class="lux-price-box">
+              <span>WITHOUT AC</span>
+              <strong>₹7,499</strong>
+              <small>per person</small>
+            </div>
+          </div>
+
+          <div class="lux-route">📍 Srinagar → Srinagar</div>
+          <div class="lux-divider"></div>
+
+          <ul class="lux-includes">
+            <li>Private Ertiga with Driver</li>
+            <li>Hotel Accommodation</li>
+            <li>Breakfast + Dinner</li>
+            <li>Dal Lake Shikara Ride Included</li>
+            <li>Kashmir Sightseeing</li>
+          </ul>
+
+          <div class="lux-not-included">
+            <strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab •
+            Toll Taxes • Entry Tickets • Personal Expenses
+          </div>
+
+          <a href="#booking" class="lux-book-btn">Book This Package →</a>
+        </div>
+      </article>
+
+      <article class="lux-package-card">
+        <div class="lux-card-inner">
+          <span class="lux-badge">COUPLE PACKAGE • 2 PERSONS</span>
+          <h3>4 Days / 3 Nights</h3>
+
+          <div class="lux-price-row">
+            <div class="lux-price-box">
+              <span>AC</span>
+              <strong>₹11,499</strong>
+              <small>per person</small>
+            </div>
+            <div class="lux-price-box">
+              <span>WITHOUT AC</span>
+              <strong>₹10,499</strong>
+              <small>per person</small>
+            </div>
+          </div>
+
+          <div class="lux-route">📍 Srinagar → Srinagar</div>
+          <div class="lux-divider"></div>
+
+          <ul class="lux-includes">
+            <li>Private Ertiga with Driver</li>
+            <li>Hotel Accommodation</li>
+            <li>Breakfast + Dinner</li>
+            <li>Dal Lake Shikara Ride Included</li>
+            <li>Kashmir Sightseeing</li>
+          </ul>
+
+          <div class="lux-not-included">
+            <strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab •
+            Toll Taxes • Entry Tickets • Personal Expenses
+          </div>
+
+          <a href="#booking" class="lux-book-btn">Book This Package →</a>
+        </div>
+      </article>
+
+      <article class="lux-package-card">
+        <div class="lux-card-inner">
+          <span class="lux-badge">COUPLE PACKAGE • 2 PERSONS</span>
+          <h3>5 Days / 4 Nights</h3>
+
+          <div class="lux-price-row">
+            <div class="lux-price-box">
+              <span>AC</span>
+              <strong>₹14,749</strong>
+              <small>per person</small>
+            </div>
+            <div class="lux-price-box">
+              <span>WITHOUT AC</span>
+              <strong>₹13,499</strong>
+              <small>per person</small>
+            </div>
+          </div>
+
+          <div class="lux-route">📍 Srinagar → Srinagar</div>
+          <div class="lux-divider"></div>
+
+          <ul class="lux-includes">
+            <li>Private Ertiga with Driver</li>
+            <li>Hotel Accommodation</li>
+            <li>Breakfast + Dinner</li>
+            <li>Dal Lake Shikara Ride Included</li>
+            <li>Kashmir Sightseeing</li>
+          </ul>
+
+          <div class="lux-not-included">
+            <strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab •
+            Toll Taxes • Entry Tickets • Personal Expenses
+          </div>
+
+          <a href="#booking" class="lux-book-btn">Book This Package →</a>
+        </div>
+      </article>
+
+      <article class="lux-package-card">
+        <div class="lux-card-inner">
+          <span class="lux-badge">COUPLE PACKAGE • 2 PERSONS</span>
+          <h3>7 Days / 6 Nights</h3>
+
+          <div class="lux-price-row">
+            <div class="lux-price-box">
+              <span>AC</span>
+              <strong>₹21,249</strong>
+              <small>per person</small>
+            </div>
+            <div class="lux-price-box">
+              <span>WITHOUT AC</span>
+              <strong>₹19,499</strong>
+              <small>per person</small>
+            </div>
+          </div>
+
+          <div class="lux-route">📍 Srinagar → Srinagar</div>
+          <div class="lux-divider"></div>
+
+          <ul class="lux-includes">
+            <li>Private Ertiga with Driver</li>
+            <li>Hotel Accommodation</li>
+            <li>Breakfast + Dinner</li>
+            <li>Dal Lake Shikara Ride Included</li>
+            <li>Kashmir Sightseeing</li>
+          </ul>
+
+          <div class="lux-not-included">
+            <strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab •
+            Toll Taxes • Entry Tickets • Personal Expenses
+          </div>
+
+          <a href="#booking" class="lux-book-btn">Book This Package →</a>
+        </div>
+      </article>
 
     </div>
 
+    <div class="lux-location-heading">
+      <span>02</span>
+      <div>
+        <p class="lux-eyebrow">START & RETURN</p>
+        <h3>Jammu → Jammu</h3>
+        <p>All prices are per person for 2 persons travelling together.</p>
+      </div>
+    </div>
 
-    <div class="package-grid">
+    <div class="lux-package-grid">
+      
+      <article class="lux-package-card">
+        <div class="lux-card-inner">
+          <span class="lux-badge">COUPLE PACKAGE • 2 PERSONS</span>
+          <h3>3 Days / 2 Nights</h3>
 
-
-      <article class="package-card">
-
-        <img src="dal-lake.jpg" alt="3 Days Kashmir Tour">
-
-        <div class="package-content">
-
-          <div class="package-top">
-            <h3>3 Days Kashmir Tour</h3>
-            <span class="days">3 DAYS</span>
+          <div class="lux-price-row">
+            <div class="lux-price-box">
+              <span>AC</span>
+              <strong>₹8,999</strong>
+              <small>per person</small>
+            </div>
+            <div class="lux-price-box">
+              <span>WITHOUT AC</span>
+              <strong>₹8,249</strong>
+              <small>per person</small>
+            </div>
           </div>
 
-          <ul>
-            <li>Day 1: Srinagar Local Sightseeing</li>
-            <li>Day 2: Gulmarg Excursion</li>
-            <li>Day 3: Pahalgam Excursion</li>
+          <div class="lux-route">📍 Jammu → Jammu</div>
+          <div class="lux-divider"></div>
+
+          <ul class="lux-includes">
+            <li>Private Ertiga with Driver</li>
+            <li>Hotel Accommodation</li>
+            <li>Breakfast + Dinner</li>
+            <li>Dal Lake Shikara Ride Included</li>
+            <li>Kashmir Sightseeing</li>
           </ul>
 
-          <a href="#booking" class="package-button">
-            Book This Tour
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <article class="package-card">
-
-        <img src="pahalgam.jpg" alt="4 Days Kashmir Tour">
-
-        <div class="package-content">
-
-          <div class="package-top">
-            <h3>4 Days Kashmir Tour</h3>
-            <span class="days">4 DAYS</span>
+          <div class="lux-not-included">
+            <strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab •
+            Toll Taxes • Entry Tickets • Personal Expenses
           </div>
 
-          <ul>
-            <li>Day 1: Srinagar Local</li>
-            <li>Day 2: Gulmarg</li>
-            <li>Day 3: Pahalgam</li>
-            <li>Day 4: Sonamarg</li>
+          <a href="#booking" class="lux-book-btn">Book This Package →</a>
+        </div>
+      </article>
+
+      <article class="lux-package-card">
+        <div class="lux-card-inner">
+          <span class="lux-badge">COUPLE PACKAGE • 2 PERSONS</span>
+          <h3>4 Days / 3 Nights</h3>
+
+          <div class="lux-price-row">
+            <div class="lux-price-box">
+              <span>AC</span>
+              <strong>₹12,999</strong>
+              <small>per person</small>
+            </div>
+            <div class="lux-price-box">
+              <span>WITHOUT AC</span>
+              <strong>₹11,749</strong>
+              <small>per person</small>
+            </div>
+          </div>
+
+          <div class="lux-route">📍 Jammu → Jammu</div>
+          <div class="lux-divider"></div>
+
+          <ul class="lux-includes">
+            <li>Private Ertiga with Driver</li>
+            <li>Hotel Accommodation</li>
+            <li>Breakfast + Dinner</li>
+            <li>Dal Lake Shikara Ride Included</li>
+            <li>Kashmir Sightseeing</li>
           </ul>
 
-          <a href="#booking" class="package-button">
-            Book This Tour
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <article class="package-card">
-
-        <img src="gulmarg.jpg" alt="5 Days Kashmir Tour">
-
-        <div class="package-content">
-
-          <div class="package-top">
-            <h3>5 Days Kashmir Tour</h3>
-            <span class="days">5 DAYS</span>
+          <div class="lux-not-included">
+            <strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab •
+            Toll Taxes • Entry Tickets • Personal Expenses
           </div>
 
-          <ul>
-            <li>Day 1: Srinagar Local</li>
-            <li>Day 2: Gulmarg</li>
-            <li>Day 3: Pahalgam</li>
-            <li>Day 4: Sonamarg</li>
-            <li>Day 5: Doodhpathri</li>
+          <a href="#booking" class="lux-book-btn">Book This Package →</a>
+        </div>
+      </article>
+
+      <article class="lux-package-card">
+        <div class="lux-card-inner">
+          <span class="lux-badge">COUPLE PACKAGE • 2 PERSONS</span>
+          <h3>5 Days / 4 Nights</h3>
+
+          <div class="lux-price-row">
+            <div class="lux-price-box">
+              <span>AC</span>
+              <strong>₹16,999</strong>
+              <small>per person</small>
+            </div>
+            <div class="lux-price-box">
+              <span>WITHOUT AC</span>
+              <strong>₹15,249</strong>
+              <small>per person</small>
+            </div>
+          </div>
+
+          <div class="lux-route">📍 Jammu → Jammu</div>
+          <div class="lux-divider"></div>
+
+          <ul class="lux-includes">
+            <li>Private Ertiga with Driver</li>
+            <li>Hotel Accommodation</li>
+            <li>Breakfast + Dinner</li>
+            <li>Dal Lake Shikara Ride Included</li>
+            <li>Kashmir Sightseeing</li>
           </ul>
 
-          <a href="#booking" class="package-button">
-            Book This Tour
-          </a>
-
-        </div>
-
-      </article>
-
-
-      <article class="package-card">
-
-        <img src="gurez-valley.jpg" alt="7 Days Kashmir Tour">
-
-        <div class="package-content">
-
-          <div class="package-top">
-            <h3>7 Days Kashmir Tour</h3>
-            <span class="days">7 DAYS</span>
+          <div class="lux-not-included">
+            <strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab •
+            Toll Taxes • Entry Tickets • Personal Expenses
           </div>
 
-          <ul>
-            <li>Day 1: Srinagar Arrival & Local</li>
-            <li>Day 2: Gulmarg</li>
-            <li>Day 3: Pahalgam</li>
-            <li>Day 4: Sonamarg</li>
-            <li>Day 5: Srinagar Local</li>
-            </ul>
-
-          <a href="#booking" class="package-button">
-            Book This Tour
-          </a>
-
+          <a href="#booking" class="lux-book-btn">Book This Package →</a>
         </div>
-
       </article>
 
+      <article class="lux-package-card">
+        <div class="lux-card-inner">
+          <span class="lux-badge">COUPLE PACKAGE • 2 PERSONS</span>
+          <h3>7 Days / 6 Nights</h3>
 
+          <div class="lux-price-row">
+            <div class="lux-price-box">
+              <span>AC</span>
+              <strong>₹22,999</strong>
+              <small>per person</small>
+            </div>
+            <div class="lux-price-box">
+              <span>WITHOUT AC</span>
+              <strong>₹21,749</strong>
+              <small>per person</small>
+            </div>
+          </div>
+
+          <div class="lux-route">📍 Jammu → Jammu</div>
+          <div class="lux-divider"></div>
+
+          <ul class="lux-includes">
+            <li>Private Ertiga with Driver</li>
+            <li>Hotel Accommodation</li>
+            <li>Breakfast + Dinner</li>
+            <li>Dal Lake Shikara Ride Included</li>
+            <li>Kashmir Sightseeing</li>
+          </ul>
+
+          <div class="lux-not-included">
+            <strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab •
+            Toll Taxes • Entry Tickets • Personal Expenses
+          </div>
+
+          <a href="#booking" class="lux-book-btn">Book This Package →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="lux-important">
+      <div class="lux-important-title">Package Information</div>
+      <p><strong>Included:</strong> Private Ertiga with Driver • Hotel Accommodation • Breakfast + Dinner • Dal Lake Shikara Ride • Kashmir Sightseeing.</p>
+      <p><strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab • Toll Taxes • Entry Tickets • Personal Expenses.</p>
+      <p><strong>Room Choice:</strong> Standard Room or Family Room can be requested according to availability.</p>
     </div>
 
   </div>
-
-</section>
-
-
-<!-- RATES -->
+                                 </section>
+    <!-- RATES -->
 
 <section class="section rates" id="rates">
 
@@ -1220,7 +1465,7 @@ Ertiga">
 </div>
 
 </section>
-<!-- REVIEWS -->
+  <!-- REVIEWS -->
 <section class="section reviews" id="reviews">
   <div class="container">
 
