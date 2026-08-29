@@ -1599,25 +1599,9 @@ Ertiga">
       <p>Comfortable rides, friendly service and memorable Kashmir journeys.</p>
     </div>
 
-    <div class="review-grid">
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>“Very comfortable Ertiga and a helpful driver. The Kashmir trip was smooth and enjoyable.”</p>
-        <strong>— Kashmir Traveler</strong>
-      </div>
-
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>“The sightseeing route was well planned and the car was clean and comfortable throughout the journey.”</p>
-        <strong>— Family Traveler</strong>
-      </div>
-
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <p>“Good service for a family trip. We enjoyed the beautiful places around Kashmir.”</p>
-        <strong>— Happy Guest</strong>
-      </div>
-    </div>
+<div class="review-grid" id="reviewsList">
+  <p>Loading reviews...</p>
+</div>
 
     <div class="review-form-card">
       <div>
@@ -1799,6 +1783,41 @@ async function submitReview(){
 
   document.getElementById("reviewText").value = "";
 }
+async function loadReviews() {
+  const reviewsList = document.getElementById("reviewsList");
+
+  const { data, error } = await supabaseClient
+    .from("Reviews")
+    .select("name, rating, review")
+    .order("created_at", { ascending: false });
+
+  if (error) {
+    console.error(error);
+    reviewsList.innerHTML = "<p>Reviews load nahi ho rahe.</p>";
+    return;
+  }
+
+  if (!data || data.length === 0) {
+    reviewsList.innerHTML = "<p>Abhi koi review nahi hai.</p>";
+    return;
+  }
+
+  reviewsList.innerHTML = data.map(item => {
+    const stars = "★★★★★".slice(0, Number(item.rating)) +
+                  "☆☆☆☆☆".slice(0, 5 - Number(item.rating));
+
+    return `
+      <div class="review-card">
+        <div class="stars">${stars}</div>
+        <p>“${item.review}”</p>
+        <strong>— ${item.name}</strong>
+      </div>
+    `;
+  }).join("");
+}
+
+loadReviews();
+  
 </script>
 <!-- WHATSAPP SCRIPT -->
 <script>
