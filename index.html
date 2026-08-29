@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Kashmir Tour Package Ertiga - Comfortable private taxi and Kashmir sightseeing tours.">
+<meta name="description"
+content="Kashmir Tour Package Ertiga - Private Ertiga taxi with driver for Kashmir sightseeing, tours, airport transfers and Jammu pickup.">
 
 <title>Kashmir Tour Package Ertiga | Private Taxi & Kashmir Tours</title>
 
@@ -21,7 +23,7 @@ html{
 
 body{
   font-family:Georgia,serif;
-  background:#f6f5ef;
+  background:#f7f6ef;
   color:#10251e;
   line-height:1.6;
 }
@@ -48,7 +50,7 @@ a{
   position:sticky;
   top:0;
   z-index:1000;
-  background:#09251d;
+  background:#062b21;
   color:white;
   border-bottom:1px solid rgba(255,255,255,.15);
 }
@@ -62,54 +64,57 @@ a{
 }
 
 .logo{
-  font-size:22px;
+  font-size:21px;
   font-weight:bold;
   letter-spacing:.3px;
 }
 
 .logo span{
-  color:#d5ad52;
+  color:#d9ae4b;
 }
 
 .nav-links{
   display:flex;
-  gap:28px;
+  gap:24px;
   align-items:center;
+  font-size:14px;
 }
 
 .nav-links a{
-  font-size:15px;
-  color:#f4f1e7;
+  transition:.2s;
 }
 
-.book-btn{
-  border:1px solid #d5ad52;
+.nav-links a:hover{
+  color:#d9ae4b;
+}
+
+.nav-book{
+  border:1px solid #d9ae4b;
   padding:10px 18px;
-  border-radius:30px;
-  color:#fff;
+  border-radius:25px;
+  color:white;
 }
 
 /* HERO */
 
 .hero{
-  min-height:720px;
+  min-height:650px;
   position:relative;
+  background:
+    linear-gradient(rgba(3,30,23,.58),rgba(3,30,23,.68)),
+    url("ertiga_banner.png") center/cover no-repeat;
   display:flex;
   align-items:center;
-  background-image:
-    linear-gradient(90deg,rgba(3,20,15,.86),rgba(3,20,15,.35)),
-    url("ertiga_banner.png");
-  background-size:cover;
-  background-position:center;
   color:white;
 }
 
 .hero-content{
-  max-width:650px;
+  max-width:720px;
+  padding:80px 0;
 }
 
 .eyebrow{
-  color:#d5ad52;
+  color:#e0bd68;
   text-transform:uppercase;
   letter-spacing:3px;
   font-size:13px;
@@ -117,78 +122,80 @@ a{
 }
 
 .hero h1{
-  font-size:clamp(46px,7vw,82px);
-  line-height:1.02;
+  font-size:clamp(46px,7vw,78px);
+  line-height:.98;
   margin-bottom:25px;
 }
 
-.hero p{
-  font-size:19px;
-  max-width:600px;
-  color:#eee;
+.hero-text{
+  font-size:18px;
+  max-width:650px;
+  color:#f2f2ed;
+  margin-bottom:30px;
 }
 
 .hero-buttons{
   display:flex;
-  gap:15px;
-  margin-top:30px;
+  gap:12px;
   flex-wrap:wrap;
 }
 
 .btn{
-  padding:14px 25px;
+  display:inline-block;
+  padding:14px 24px;
   border-radius:30px;
   font-weight:bold;
-  display:inline-block;
+  border:1px solid transparent;
+  cursor:pointer;
 }
 
 .btn-primary{
-  background:#d5ad52;
-  color:#10251e;
+  background:#d9ae4b;
+  color:#17251e;
 }
 
 .btn-outline{
-  border:1px solid white;
+  border-color:white;
   color:white;
 }
 
 .hero-trust{
   display:flex;
-  gap:25px;
   flex-wrap:wrap;
+  gap:25px;
   margin-top:28px;
-  color:#eee;
+  font-size:14px;
 }
 
-/* INTRO */
+/* SECTION */
 
 .section{
   padding:90px 0;
 }
 
-.intro{
-  background:#f6f5ef;
-}
-
 .section-heading{
   display:flex;
   justify-content:space-between;
+  align-items:end;
   gap:50px;
-  align-items:flex-end;
   margin-bottom:45px;
 }
 
 .section-heading h2{
-  font-size:clamp(34px,5vw,52px);
-  line-height:1.1;
+  font-size:clamp(35px,5vw,55px);
+  line-height:1.05;
 }
 
 .section-heading p{
   max-width:480px;
-  color:#58645e;
+  color:#68736c;
 }
 
-/* FEATURES */
+/* SERVICES */
+
+.intro{
+  background:#f7f6ef;
+}
 
 .features{
   display:grid;
@@ -198,30 +205,31 @@ a{
 
 .feature{
   background:white;
-  border:1px solid #e3e3dc;
+  border:1px solid #e1e3dc;
   border-radius:18px;
   padding:28px;
+  box-shadow:0 8px 25px rgba(0,0,0,.05);
 }
 
 .feature-icon{
-  font-size:28px;
-  color:#b58a32;
-  margin-bottom:15px;
+  font-size:25px;
+  color:#b58b2e;
+  margin-bottom:12px;
 }
 
 .feature h3{
-  margin-bottom:10px;
+  margin-bottom:9px;
 }
 
 .feature p{
-  color:#68716b;
+  color:#68736b;
   font-size:15px;
 }
 
 /* DESTINATIONS */
 
 .destinations{
-  background:#e9eee8;
+  background:#eaf0ea;
 }
 
 .destination-grid{
@@ -235,7 +243,7 @@ a{
   border-radius:20px;
   overflow:hidden;
   box-shadow:0 8px 25px rgba(0,0,0,.07);
-  transition:.3s;
+  transition:.25s;
 }
 
 .destination:hover{
@@ -247,22 +255,142 @@ a{
 }
 
 .destination-content{
-  padding:23px;
+  padding:22px;
 }
 
 .destination h3{
-  font-size:27px;
+  font-size:25px;
   margin-bottom:8px;
 }
 
 .destination p{
-  color:#68716b;
+  color:#68716c;
+}
+
+/* PACKAGES */
+
+.packages{
+  background:#f7f6ef;
+}
+
+.package-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.package-card{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  border:1px solid #e0e2dc;
+  box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.package-card img{
+  height:250px;
+}
+
+.package-content{
+  padding:26px;
+}
+
+.package-top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.package-top h3{
+  font-size:28px;
+}
+
+.days{
+  background:#eaf0ea;
+  color:#14513e;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.package-content ul{
+  padding-left:20px;
+  margin:15px 0 22px;
+  color:#5f6963;
+}
+
+.package-content li{
+  margin:5px 0;
+}
+
+.package-button{
+  display:inline-block;
+  background:#062b21;
+  color:white;
+  padding:12px 20px;
+  border-radius:25px;
+}
+
+/* RATES */
+
+.rates{
+  background:#eaf0ea;
+}
+
+.rate-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.rate-card{
+  background:white;
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 8px 25px rgba(0,0,0,.06);
+  border:1px solid #dfe4dc;
+}
+
+.rate-card h3{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.rate-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:17px 0;
+  border-bottom:1px solid #e5e7e2;
+}
+
+.rate-row:last-child{
+  border-bottom:0;
+}
+
+.rate-label{
+  color:#68736c;
+}
+
+.rate-price{
+  font-size:22px;
+  font-weight:bold;
+  color:#14513e;
+}
+
+.rate-note{
+  margin-top:20px;
+  color:#68736c;
+  font-size:14px;
 }
 
 /* CAR */
 
 .car-section{
-  background:#f6f5ef;
+  background:#f7f6ef;
 }
 
 .car-gallery{
@@ -271,20 +399,32 @@ a{
   gap:15px;
 }
 
-.car-gallery img{
+.car-gallery figure{
+  overflow:hidden;
   border-radius:18px;
+}
+
+.car-gallery img{
   height:230px;
+  transition:.3s;
+}
+
+.car-gallery img:hover{
+  transform:scale(1.03);
 }
 
 .car-gallery .large{
   grid-row:span 2;
+}
+
+.car-gallery .large img{
   height:475px;
 }
 
 /* BOOKING */
 
 .booking{
-  background:#08271f;
+  background:#062b21;
   color:white;
 }
 
@@ -296,30 +436,31 @@ a{
 }
 
 .booking h2{
-  font-size:clamp(38px,5vw,60px);
-  line-height:1.1;
+  font-size:clamp(40px,5vw,65px);
+  line-height:1;
   margin-bottom:20px;
 }
 
 .booking-text{
-  color:#dce4df;
+  color:#d5dfd9;
   max-width:600px;
+  font-size:17px;
 }
 
 .booking-card{
   background:white;
   color:#10251e;
-  padding:32px;
   border-radius:22px;
+  padding:30px;
 }
 
 .booking-card h3{
   font-size:28px;
-  margin-bottom:20px;
+  margin-bottom:22px;
 }
 
 .form-group{
-  margin-bottom:16px;
+  margin-bottom:17px;
 }
 
 .form-group label{
@@ -332,36 +473,54 @@ a{
 .form-group textarea{
   width:100%;
   padding:14px;
-  border:1px solid #ddd;
+  border:1px solid #d8ddd8;
   border-radius:10px;
   font-family:inherit;
   font-size:15px;
+  outline:none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+  border-color:#b58b2e;
 }
 
 .form-group textarea{
-  min-height:120px;
+  min-height:125px;
   resize:vertical;
 }
 
 .whatsapp-btn{
   width:100%;
   border:0;
-  cursor:pointer;
+  background:#d9ae4b;
+  color:#17251e;
   font-family:inherit;
-  font-size:16px;
+  font-size:15px;
+  font-weight:bold;
+  padding:15px;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+.form-note{
+  margin-top:12px;
+  color:#68736c;
+  font-size:12px;
 }
 
 /* FOOTER */
 
 footer{
-  background:#051812;
-  color:#cbd4ce;
+  background:#041e17;
+  color:#cbd8d1;
   padding:35px 0;
   text-align:center;
 }
 
 footer strong{
   color:white;
+  font-size:16px;
 }
 
 footer small{
@@ -378,11 +537,8 @@ footer small{
   }
 
   .nav-links{
-    display:none;
-  }
-
-  .hero{
-    min-height:650px;
+    gap:12px;
+    font-size:12px;
   }
 
   .features{
@@ -393,23 +549,52 @@ footer small{
     grid-template-columns:repeat(2,1fr);
   }
 
+  .package-grid{
+    grid-template-columns:1fr;
+  }
+
+  .rate-grid{
+    grid-template-columns:1fr;
+  }
+
   .booking-wrapper{
     grid-template-columns:1fr;
+    gap:40px;
   }
 }
 
 @media(max-width:600px){
 
-  .section{
-    padding:65px 0;
+  .container{
+    width:90%;
+  }
+
+  .nav-links a:not(.nav-book){
+    display:none;
+  }
+
+  .logo{
+    font-size:17px;
+  }
+
+  .hero{
+    min-height:650px;
+  }
+
+  .hero-content{
+    padding:60px 0;
   }
 
   .hero h1{
     font-size:48px;
   }
 
-  .hero p{
+  .hero-text{
     font-size:16px;
+  }
+
+  .section{
+    padding:65px 0;
   }
 
   .section-heading{
@@ -420,9 +605,16 @@ footer small{
     margin-top:20px;
   }
 
-  .features,
+  .features{
+    grid-template-columns:1fr;
+  }
+
   .destination-grid{
     grid-template-columns:1fr;
+  }
+
+  .destination img{
+    height:240px;
   }
 
   .car-gallery{
@@ -431,15 +623,15 @@ footer small{
 
   .car-gallery .large{
     grid-column:span 2;
-    height:300px;
+    grid-row:auto;
+  }
+
+  .car-gallery .large img{
+    height:280px;
   }
 
   .car-gallery img{
     height:180px;
-  }
-
-  .booking-wrapper{
-    gap:35px;
   }
 
   .booking-card{
@@ -463,8 +655,10 @@ footer small{
     <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#destinations">Destinations</a>
+      <a href="#packages">Packages</a>
+      <a href="#rates">Rates</a>
       <a href="#car">Our Ertiga</a>
-      <a href="#booking" class="book-btn">Book Now</a>
+      <a href="#booking" class="nav-book">Book Now</a>
     </nav>
 
   </div>
@@ -473,379 +667,4 @@ footer small{
 
 <!-- HERO -->
 
-<section class="hero" id="home">
-  <div class="container">
-
-    <div class="hero-content">
-
-      <p class="eyebrow">Private Taxi • Kashmir Tours</p>
-
-      <h1>Explore Kashmir in Comfort.</h1>
-
-      <p>
-        Travel Kashmir your way in a clean, comfortable Ertiga
-        with a local driver who knows the routes.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#booking" class="btn btn-primary">Plan My Trip</a>
-        <a href="#destinations" class="btn btn-outline">Explore Kashmir</a>
-      </div>
-
-      <div class="hero-trust">
-        <span>✓ Comfortable Ertiga</span>
-        <span>✓ Family Friendly</span>
-        <span>✓ Local Routes</span>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- SERVICES -->
-
-<section class="section intro" id="services">
-  <div class="container">
-
-    <div class="section-heading">
-
-      <div>
-        <p class="eyebrow">Your Journey, Your Way</p>
-        <h2>Comfortable travel for Kashmir memories.</h2>
-      </div>
-
-      <p>
-        From airport and railway-station pickups to multi-day
-        sightseeing, get a private cab for your Kashmir trip
-        with flexible plans.
-      </p>
-
-    </div>
-
-
-    <div class="features">
-
-      <div class="feature">
-        <div class="feature-icon">✦</div>
-        <h3>Premium Comfort</h3>
-        <p>Spacious Ertiga for couples, families and small groups.</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">⌁</div>
-        <h3>Local Experience</h3>
-        <p>Plan routes around the places you actually want to see.</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">⌁</div>
-        <h3>Smooth Travel</h3>
-        <p>Relax and enjoy the mountain roads while we handle the driving.</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">♡</div>
-        <h3>Family Friendly</h3>
-        <p>A practical choice for comfortable sightseeing across Kashmir.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- DESTINATIONS -->
-
-<section class="section destinations" id="destinations">
-  <div class="container">
-
-    <div class="section-heading">
-
-      <div>
-        <p class="eyebrow">Kashmir Calling</p>
-        <h2>Popular destinations</h2>
-      </div>
-
-      <p>
-        Build your own route around Kashmir's famous valleys,
-        meadows, lakes and mountain roads.
-      </p>
-
-    </div>
-
-
-    <div class="destination-grid">
-
-
-      <article class="destination">
-        <img src="gulmarg.jpg" alt="Gulmarg Kashmir">
-        <div class="destination-content">
-          <h3>Gulmarg</h3>
-          <p>Beautiful meadows, snow-covered mountains and unforgettable mountain drives.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="pahalgam.jpg" alt="Pahalgam Kashmir">
-        <div class="destination-content">
-          <h3>Pahalgam</h3>
-          <p>Peaceful valleys, rivers and scenic mountain roads perfect for sightseeing.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="sonamarg.jpg" alt="Sonamarg Kashmir">
-        <div class="destination-content">
-          <h3>Sonamarg</h3>
-          <p>Alpine landscapes, mountain views and dramatic Himalayan scenery.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="doodhpathri.jpg" alt="Doodhpathri Kashmir">
-        <div class="destination-content">
-          <h3>Doodhpathri</h3>
-          <p>Green meadows, flowing streams and peaceful mountain surroundings.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="yusmarg.jpg" alt="Yusmarg Kashmir">
-        <div class="destination-content">
-          <h3>Yusmarg</h3>
-          <p>Quiet meadows, pine forests and beautiful scenic Kashmir routes.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="gurez-valley.jpg" alt="Gurez Valley Kashmir">
-        <div class="destination-content">
-          <h3>Gurez Valley</h3>
-          <p>Majestic mountains, traditional villages and unforgettable valley views.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="aru-valley.jpg" alt="Aru Valley Kashmir">
-        <div class="destination-content">
-          <h3>Aru Valley</h3>
-          <p>A peaceful mountain valley surrounded by forests and beautiful scenery.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="betaab-valley.jpg" alt="Betaab Valley Kashmir">
-        <div class="destination-content">
-          <h3>Betaab Valley</h3>
-          <p>Crystal-clear streams, green meadows and dramatic Himalayan landscapes.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="aharbal.jpg" alt="Aharbal Kashmir">
-        <div class="destination-content">
-          <h3>Aharbal</h3>
-          <p>A beautiful waterfall destination surrounded by lush Kashmir forests.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="srinagar.jpg" alt="Srinagar Kashmir">
-        <div class="destination-content">
-          <h3>Srinagar</h3>
-          <p>Explore Dal Lake, gardens, markets and the beauty of Kashmir's capital.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="dal-lake.jpg" alt="Dal Lake and Shikara Kashmir">
-        <div class="destination-content">
-          <h3>Dal Lake & Shikara</h3>
-          <p>Enjoy a relaxing Shikara ride surrounded by Kashmir's beautiful scenery.</p>
-        </div>
-      </article>
-
-
-      <article class="destination">
-        <img src="mughal-gardens.jpg" alt="Mughal Gardens Kashmir">
-        <div class="destination-content">
-          <h3>Mughal Gardens</h3>
-          <p>Beautiful gardens, fountains, flowers and classic Kashmir landscapes.</p>
-        </div>
-      </article>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ERTIGA -->
-
-<section class="section car-section" id="car">
-  <div class="container">
-
-    <div class="section-heading">
-
-      <div>
-        <p class="eyebrow">Your Ride</p>
-        <h2>Meet our Ertiga</h2>
-      </div>
-
-      <p>
-        White Ertiga • Spacious • Comfortable • Ready for Kashmir.
-      </p>
-
-    </div>
-
-
-    <div class="car-gallery">
-
-      <figure class="large">
-        <img src="ertiga_front.png" alt="Front view of white Ertiga">
-      </figure>
-
-      <figure>
-        <img src="ertiga_side.png" alt="Side view of white Ertiga">
-      </figure>
-
-      <figure>
-        <img src="ertiga_back.png" alt="Back view of white Ertiga">
-      </figure>
-
-      <figure>
-        <img src="ertiga_rear_angle.png" alt="Rear angle of white Ertiga">
-      </figure>
-
-      <figure>
-        <img src="ertiga_front_alt.png" alt="Alternative front view of white Ertiga">
-      </figure>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- BOOKING -->
-
-<section class="section booking" id="booking">
-
-  <div class="container booking-wrapper">
-
-    <div>
-
-      <p class="eyebrow">Ready to Travel?</p>
-
-      <h2>Tell us your Kashmir plan.</h2>
-
-      <p class="booking-text">
-        Send your travel dates, pickup location and places you want
-        to visit. We'll help you plan the route.
-      </p>
-
-    </div>
-
-
-    <div class="booking-card">
-
-      <h3>Booking Enquiry</h3>
-
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="Your name">
-      </div>
-
-
-      <div class="form-group">
-        <label for="details">Trip Details</label>
-        <textarea
-          id="details"
-          placeholder="Dates, pickup & destinations"></textarea>
-      </div>
-
-
-      <button
-        class="btn btn-primary whatsapp-btn"
-        onclick="sendEnquiry()">
-        Send Enquiry on WhatsApp
-      </button>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  <div class="container">
-
-    <strong>Kashmir Tour Package Ertiga</strong>
-
-    <div>Private Taxi & Tour Service in Kashmir</div>
-
-    <small>
-      Comfort • Local Routes • Kashmir
-    </small>
-
-  </div>
-
-</footer>
-
-
-<script>
-
-function sendEnquiry(){
-
-  /*
-   * IMPORTANT:
-   * Replace the number below with your WhatsApp number.
-   * Country code + number, without + or spaces.
-   */
-
-  const phone = "919682639270";
-
-  const name =
-    document.getElementById("name").value.trim()
-    || "Customer";
-
-  const details =
-    document.getElementById("details").value.trim()
-    || "I want to plan a Kashmir trip.";
-
-  const message =
-    "Hello, I am " + name + ". " + details;
-
-  const url =
-    "https://wa.me/" +
-    phone +
-    "?text=" +
-    encodeURIComponent(message);
-
-  window.open(url, "_blank");
-}
-
-</script>
-
-</body>
-</html>
+<section
