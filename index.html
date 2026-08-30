@@ -1553,8 +1553,23 @@ function openPackage(type){
   data.groups.forEach((g,gi)=>{
     html+=`<h4 class="detail-location">${String(gi+1).padStart(2,"0")} &nbsp; ${g.location}</h4><div class="detail-grid">`;
     g.prices.forEach(p=>{
-      html+=`<article class="detail-card"><h4>${p[0]}</h4><div class="detail-price"><div><span>AC</span><strong>${p[1]}</strong></div><div><span>WITHOUT AC</span><strong>${p[2]}</strong></div></div><ul><li>Private Ertiga with Driver</li><li>Hotel Accommodation</li><li>Breakfast + Dinner</li><li>Dal Lake Shikara Ride Included</li><li>Toll Taxes Included</li><li>Kashmir Sightseeing</li></ul><a class="detail-book" href="#booking">Book This Package →</a></article>`;
-    });
+      html+=`
+<div class="detail-card">
+  <h4>${p[0]}</h4>
+  <div class="detail-price">
+    <div>
+      <span>AC</span>
+      <strong>${p[1]}</strong>
+      <small>Per Person</small>
+    </div>
+    <div>
+      <span>WITHOUT AC</span>
+      <strong>${p[2]}</strong>
+      <small>Per Person</small>
+    </div>
+  </div>
+</div>`;
+});
     html+="</div>";
   });
   html+=`<div class="lux-important"><div class="lux-important-title">Package Information</div><p><strong>Included:</strong> Private Ertiga with Driver • Hotel Accommodation • Breakfast + Dinner • Dal Lake Shikara Ride • Toll Taxes • Kashmir Sightseeing.</p><p><strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab • Entry Tickets • Personal Expenses.</p></div>`;
