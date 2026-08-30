@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guest Reviews | Kashmir Tour Package Ertiga</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,serif;background:#f7f6ef;color:#10251e;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{background:#062b21;color:#fff;padding:18px 0}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.topbar strong{font-size:20px}
+.back-btn{border:1px solid #d9ae4b;color:#d9ae4b;padding:9px 16px;border-radius:25px;font-weight:bold}
+.section{padding:75px 0}
+.section-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:40px}
+.section-heading h2{font-size:clamp(35px,5vw,55px);line-height:1.05}
+.section-heading p{max-width:480px;color:#68736c}
+.eyebrow{color:#b58b2e;text-transform:uppercase;letter-spacing:3px;font-size:13px;margin-bottom:12px}
+/* REVIEWS */
+.reviews{background:#f7f6ef}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.review-card{background:white;padding:28px;border-radius:20px;border:1px solid #e1e3dc;box-shadow:0 8px 25px rgba(0,0,0,.06)}.stars{color:#d9ae4b;font-size:20px;letter-spacing:3px;margin-bottom:15px}.review-card p{color:#5f6963;margin-bottom:18px}.review-card strong{color:#10251e}
+.pickup{background:#eaf0ea}.pickup-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.pickup-card{background:white;border:1px solid #dfe4dc;border-radius:18px;padding:25px;box-shadow:0 8px 25px rgba(0,0,0,.05)}.pickup-card h3{margin-bottom:8px}.pickup-card p{color:#68736c;font-size:15px}
+.faq{background:#f7f6ef}.faq-list{max-width:900px;margin:auto}.faq-item{background:white;border:1px solid #e1e3dc;border-radius:14px;margin-bottom:12px;overflow:hidden}.faq-item summary{cursor:pointer;padding:19px 22px;font-weight:bold;list-style:none}.faq-item summary::-webkit-details-marker{display:none}.faq-item p{padding:0 22px 20px;color:#68736c}
+.contact{background:#eaf0ea}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.contact-card{background:white;border-radius:18px;padding:26px;text-align:center;border:1px solid #dfe4dc}.contact-card .contact-icon{font-size:28px;margin-bottom:10px}.contact-card h3{margin-bottom:8px}.contact-card p{color:#68736c}.contact-card a{color:#14513e;font-weight:bold}
+@media(max-width:900px){.review-grid{grid-template-columns:1fr}.pickup-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.pickup-grid{grid-template-columns:1fr}.call-btn{display:none}}
+
+
+
+.review-page .review-form-card{margin-top:40px}
+@media(max-width:700px){.section-heading{display:block}.section-heading>p{margin-top:18px}.review-grid{grid-template-columns:1fr}.topbar .container{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <strong>Kashmir Tour Package Ertiga</strong>
+    <a class="back-btn" href="../index.html">← Back to Website</a>
+  </div>
+</header>
+
+<main class="review-page">
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Happy Travelers</p>
+        <h2>What Our Guests Say</h2>
+      </div>
+      <p>Comfortable rides, friendly service and memorable Kashmir journeys.</p>
+    </div>
+
+<div class="review-grid">
+
+    <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“Very comfortable Ertiga and a helpful driver. The Kashmir trip was smooth and enjoyable.”</p>
+        <strong>— Kashmir Traveler</strong>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“The sightseeing route was well planned and the car was clean and comfortable throughout the journey.”</p>
+        <strong>— Family Traveler</strong>
+    </div>
+
+    <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>“Good service for a family trip. We enjoyed the beautiful places around Kashmir.”</p>
+        <strong>— Happy Guest</strong>
+    </div>
+
+</div>
+
+<div class="review-grid" id="reviewsList">
+    <p>Loading reviews...</p>
+</div>
+
+    <div class="review-form-card">
+      <div>
+        <p class="eyebrow">Share Your Experience</p>
+        <h3>Write a Review</h3>
+        <p class="review-form-text">Tell future guests about your Kashmir journey with us.</p>
+      </div>
+
+      <div class="review-form-grid">
+        <div class="form-group">
+          <label for="reviewName">Your Name</label>
+          <input type="text" id="reviewName" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="reviewRating">Rating</label>
+          <select id="reviewRating">
+            <option value="5">★★★★★ — 5 Stars</option>
+            <option value="4">★★★★☆ — 4 Stars</option>
+            <option value="3">★★★☆☆ — 3 Stars</option>
+            <option value="2">★★☆☆☆ — 2 Stars</option>
+            <option value="1">★☆☆☆☆ — 1 Star</option>
+          </select>
+        </div>
+
+        <div class="form-group review-full">
+          <label for="reviewText">Your Review</label>
+          <textarea id="reviewText" placeholder="Write about your Kashmir trip..."></textarea>
+        </div>
+      </div>
+
+      <button class="review-submit-btn" type="button" onclick="submitReview()">
+        Submit Review
+      </button>
+
+      <p class="review-note">
+        Your review will be prepared as a WhatsApp message for approval before it is published.
+      </p>
+    </div>
+
+    <div id="guestReviews" class="review-grid guest-review-grid"></div>
+
+  </div>
+</section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+const SUPABASE_URL = "https://bdgayfmfdfjkzxwkybiq.supabase.co";
+const SUPABASE_KEY = "sb_publishable_lp9X8dJJC2WoutQ9mEt7-w_ofibkFHZ";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+</script>
+<script>
+async function submitReview(){
+
+  const name =
+    document.getElementById("reviewName").value.trim() || "Guest";
+
+  const rating =
+    Number(document.getElementById("reviewRating").value);
+
+  const review =
+    document.getElementById("reviewText").value.trim();
+
+  if(!review){
+    alert("Please write your review first.");
+    return;
+  }
+
+  const { error } = await supabaseClient
+    .from("Reviews")
+    .insert([
+      {
+        name: name,
+        rating: rating,
+        review: review
+      }
+    ]);
+
+  if(error){
+    alert("Review save nahi hua. Please try again.");
+    console.error(error);
+    return;
+  }
+
+  alert("Thank you! Your review has been submitted.");
+
+  document.getElementById("reviewText").value = "";
+}
+async function loadReviews() {
+  const reviewsList = document.getElementById("reviewsList");
+
+  const { data, error } = await supabaseClient
+    .from("Reviews")
+    .select("name, rating, review")
+    .order("created_at", { ascending: false });
+
+  if (error) {
+    console.error(error);
+    reviewsList.innerHTML = "<p>Reviews load nahi ho rahe.</p>";
+    return;
+  }
+
+  if (!data || data.length === 0) {
+    reviewsList.innerHTML = "<p>Abhi koi review nahi hai.</p>";
+    return;
+  }
+
+  reviewsList.innerHTML = data.map(item => {
+    const stars = "★★★★★".slice(0, Number(item.rating)) +
+                  "☆☆☆☆☆".slice(0, 5 - Number(item.rating));
+
+    return `
+      <div class="review-card">
+        <div class="stars">${stars}</div>
+        <p>“${item.review}”</p>
+        <strong>— ${item.name}</strong>
+      </div>
+    `;
+  }).join("");
+}
+
+loadReviews();
+  
+</script>
+
+
+</body>
+</html>
