@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://bhtzaidbht-sudo.github.io/kashmir-tour-package-ertiga/sitemap.xml
