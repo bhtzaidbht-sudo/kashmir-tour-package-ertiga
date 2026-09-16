@@ -72,6 +72,25 @@ pointer-events:none;
 footer{background:#041e17;color:#cbd8d1;padding:38px 0;text-align:center}footer strong{color:#fff;font-size:17px}footer small{display:block;margin-top:8px}
 @media(max-width:1000px){.nav-links{gap:10px;font-size:11px}.features{grid-template-columns:repeat(2,1fr)}.destination-grid{grid-template-columns:repeat(2,1fr)}.pickup-grid{grid-template-columns:repeat(2,1fr)}.booking-wrapper{grid-template-columns:1fr;gap:40px}}
 @media(max-width:700px){.container{width:90%}.menu-toggle{display:block}.nav-inner{position:relative;min-height:65px}.nav-links{display:none;position:absolute;top:65px;left:-5.5%;right:-5.5%;background:#062b21;flex-direction:column;padding:15px;gap:4px;z-index:9999;border-top:1px solid rgba(217,174,75,.25)}.nav-links.active{display:flex}.nav-links a{display:block;width:100%;padding:9px 12px;text-align:center}.call-btn{display:none}.logo{font-size:17px}.hero{min-height:650px}.hero-content{padding:70px 0}.hero h1{font-size:46px}.hero-text{font-size:16px}.section{padding:68px 0}.section-heading{display:block}.section-heading>p{margin-top:20px}.features,.destination-grid,.package-choice-grid,.detail-grid,.contact-grid{grid-template-columns:1fr}.pickup-grid{grid-template-columns:1fr}.destination img{height:240px}.car-gallery{grid-template-columns:1fr 1fr}.car-gallery .large{grid-column:span 2;grid-row:auto}.car-gallery .large img{height:280px}.car-gallery img{height:180px}.package-choice-card h3{font-size:27px}.package-details{padding:22px}.package-details .detail-head{align-items:flex-start;flex-direction:column}.luxury-packages{background:linear-gradient(180deg,#08271e 0%,#10372b 27%,#f7f5ed 27%,#f7f5ed 100%)}.booking-card{padding:22px}}
+/* MOBILE MENU FIX */
+@media(max-width:700px){
+  .nav-links.active{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:65px;
+    right:0;
+    left:0;
+    background:#10251e;
+    padding:15px;
+    z-index:9999;
+  }
+
+  .nav-links.active a{
+    display:block !important;
+    padding:12px;
+  }
+}
 </style>
 <script type="application/ld+json">
 {
