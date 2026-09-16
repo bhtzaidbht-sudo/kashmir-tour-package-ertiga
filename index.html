@@ -756,80 +756,14 @@ function toggleMenu(){
 
 
 <script>
-const packageData = {
-  couple: {
-    title: "Couple Package — 2 Persons",
-    intro: "Premium private travel for two with comfortable accommodation, meals and a complimentary Dal Lake Shikara Ride.",
-    groups: [
-      {location:"Srinagar → Srinagar", prices:[
-        ["3 Days / 2 Nights","₹8,249","₹7,499"],
-        ["4 Days / 3 Nights","₹11,499","₹10,499"],
-        ["5 Days / 4 Nights","₹14,749","₹13,499"],
-        ["7 Days / 6 Nights","₹21,249","₹19,499"]
-      ]},
-      {location:"Jammu → Jammu", prices:[
-        ["3 Days / 2 Nights","₹8,999","₹8,249"],
-        ["4 Days / 3 Nights","₹12,999","₹11,749"],
-        ["5 Days / 4 Nights","₹16,999","₹15,249"],
-        ["7 Days / 6 Nights","₹22,999","₹21,749"]
-      ]}
-    ]
-  },
-  family: {
-    title: "Family Package — 4 Persons",
-    intro: "Comfortable private travel for four with family accommodation, meals and a complimentary Dal Lake Shikara Ride.",
-    groups: [
-      {location:"Srinagar → Srinagar", prices:[
-        ["5 Days / 4 Nights","₹8,899","₹8,249"],
-        ["6 Days / 5 Nights","₹10,899","₹10,149"],
-        ["7 Days / 6 Nights","₹12,899","₹11,999"]
-      ]},
-      {location:"Jammu → Jammu", prices:[
-        ["5 Days / 4 Nights","₹9,499","₹8,899"],
-        ["6 Days / 5 Nights","₹11,699","₹10,899"],
-        ["7 Days / 6 Nights","₹13,799","₹12,199"]
-      ]}
-    ]
-  }
-};
-
-function openPackage(type){
-  const data=packageData[type];
-  const box=document.getElementById("package-details");
-  let html=`<div class="detail-head"><div><p class="lux-eyebrow">${type==="couple"?"COUPLE PACKAGE":"FAMILY PACKAGE"}</p><h3>${data.title}</h3><p>${data.intro}</p></div><button class="package-close" onclick="closePackage()">Close ×</button></div>`;
-  data.groups.forEach((g,gi)=>{
-    html+=`<h4 class="detail-location">${String(gi+1).padStart(2,"0")} &nbsp; ${g.location}</h4><div class="detail-grid">`;
-    g.prices.forEach(p=>{
-      html+=`
-<div class="detail-card">
-  <h4>${p[0]}</h4>
-  <div class="detail-price">
-    <div>
-      <span>AC</span>
-      <strong>${p[1]}</strong>
-      <small>Per Person</small>
-    </div>
-    <div>
-      <span>WITHOUT AC</span>
-      <strong>${p[2]}</strong>
-      <small>Per Person</small>
-    </div>
-  </div>
-</div>`;
-});
-    html+="</div>";
-  });
-  html+=`<div class="lux-important"><div class="lux-important-title">Package Information</div><p><strong>Included:</strong> Private Ertiga with Driver • Hotel Accommodation • Breakfast + Dinner • Dal Lake Shikara Ride • Toll Taxes • Kashmir Sightseeing.</p><p><strong>Not Included:</strong> Horse Ride • Mandatory Local/Union Cab • Entry Tickets • Personal Expenses.</p></div>`;
-  box.innerHTML=html;
-  box.hidden=false;
-  box.scrollIntoView({behavior:"smooth",block:"start"});
-}
-function closePackage(){
-  const box=document.getElementById("package-details");
-  box.hidden=true;
-  box.innerHTML="";
+<script>
+function toggleMenu(){
+    document.querySelector(".nav-links").classList.toggle("active");
 }
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
